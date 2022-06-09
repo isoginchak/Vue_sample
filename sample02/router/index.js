@@ -3,6 +3,8 @@ import SampleHome from '@/components/SampleHome.vue'
 import SampleAbout from '@/components/SampleAbout.vue'
 import TestPage01 from '@/components/SampleTest1.vue'
 import TestPage02 from '@/components/SampleTest2.vue'
+import PostShow from '@/components/PostShow.vue'
+
 
 const routes = [
     {
@@ -24,7 +26,13 @@ const routes = [
       path: '/test/2',
       name: 'SampleTest2',
       component: TestPage02 
-    }
+    },
+    {
+        path: '/post/:id',
+        name: 'PostShow',
+        component:PostShow,
+        props:true,
+      },
   ]
   
   const router = createRouter({

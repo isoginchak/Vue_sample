@@ -1,6 +1,7 @@
 <template>
   <div id="app">
  <router-view/>
+ <p>postが課題のtestの部分</p>
     
 </div>
 </template>
