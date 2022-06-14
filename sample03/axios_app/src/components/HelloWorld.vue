@@ -26,7 +26,7 @@ export default {
       let result = await axios.get(url);
       console.log(result);
 
-      data.info = JSON.stringify(result.data.info.page);
+      data.info = JSON.stringify(result.data.results[0].email);
       data.mydata = JSON.stringify(result.data);
     };
     onMounted(() => {
